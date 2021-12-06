@@ -1,0 +1,25 @@
+{
+  "name": "api_gateway",
+  "version": "1.0.0",
+  "description": "apigateway tienda g6",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squinteroagudelo/api-gateway.git"
+  },
+  "author": "Samuel Quintero Agudelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/squinteroagudelo/api-gateway/issues"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^3.4.0",
+    "apollo-server": "^3.5.0",
+    "graphql": "^15.7.2",
+    "lodash": "^4.17.21",
+    "node-fetch": "^3.1.0"
+  }
+}
