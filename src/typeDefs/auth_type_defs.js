@@ -30,7 +30,7 @@ const authTypeDefs = gql `
     }
     
     type Mutation{
-        signUpUser(UserInput: SignUpInput!): Tokens!
+        signUpUser(userInput: SignUpInput!): Tokens!
         logIn(credentials: CredentialsInput!): Tokens!
         refreshToken(refresh: String!): Access!
     }
