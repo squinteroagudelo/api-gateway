@@ -17,9 +17,7 @@ const authResolver = {
             }
             return await dataSources.authAPI.createUser(authInput)
         },
-        logIn: async (_, { credentials }, { dataSources }) => {
-            return await dataSources.authAPI.authRequest(credentials)
-        },
+        logIn: (_, { credentials }, { dataSources }) => dataSources.authAPI.authRequest(credentials),
         refreshToken: (_, { refresh }, { dataSources }) => dataSources.authAPI.refreshToken(refresh),
     }
 };

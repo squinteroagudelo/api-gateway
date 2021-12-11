@@ -3,6 +3,7 @@ const { gql } = require('apollo-server');
 const authTypeDefs = gql `
     type Tokens {
         refresh: String!
+        access: String!
     }
     
     type Access {
@@ -36,7 +37,7 @@ const authTypeDefs = gql `
     }
     
     type Query{
-        userDetailById(userId: Int!): UserDetail!
+        userDetailById(userId: Int!): UserDetail
     }
 `;
 
