@@ -16,13 +16,13 @@ class ProductAPI extends RESTDataSource {
         return await this.get('/products');
     }
 
-    async productById(id) {
+    async getProductById(id) {
         return await this.get(`/products/${id}`);
     }
 
     async updateProduct(product) {
         product = new Object((JSON).parse(JSON.stringify(product)));
-        return await this.put(`/products/${product.id}`, product);
+        return await this.put(`/products/${product.id}/`, product);
     }
 
     async deleteProduct(id) {

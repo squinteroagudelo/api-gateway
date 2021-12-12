@@ -27,7 +27,7 @@ const customerTypeDefs = gql `
     extend type Mutation {
         createCustomer(customer: CustomerInput!): Customer
         updateCustomer(customer: CustomerInput!): Customer
-        deleteCustomer(id: String!): Int
+        deleteCustomer(id: String!): String
     }
 `;
 
